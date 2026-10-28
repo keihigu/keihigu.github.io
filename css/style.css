@@ -610,3 +610,20 @@ section#new h2.close {
 }
 
 }
+
+/* Publication pages: keep long lists readable and navigation above the content. */
+.publication-page #main ol {
+	padding-left: 1.6em;
+	margin: 0.75em 0 1.5em;
+}
+.publication-page #main ol li {
+	margin-bottom: 0.6em;
+	overflow-wrap: anywhere;
+}
+@media (max-width: 800px) {
+	.publication-page #contents { display: flex; flex-direction: column; }
+	.publication-page #sub { order: -1; }
+	.publication-page #sub #head { position: static; width: auto; }
+	.publication-page #menubar ul { display: flow-root; }
+	.publication-page #main { padding-top: 20px; }
+}
