@@ -175,6 +175,30 @@ a:focus-visible {
   background: #bed6eb80;
 }
 
+.registration-link {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 1.4rem;
+  padding: 0.55rem 1.15rem;
+  border-radius: 2px;
+  background: var(--ice);
+  color: var(--navy);
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.registration-link:hover {
+  background: white;
+  text-decoration: underline;
+}
+
+.registration-link:focus-visible {
+  outline-color: white;
+}
+
 .content {
   padding-block: clamp(2.75rem, 5.75vw, 5.25rem) 4.4rem;
 }
